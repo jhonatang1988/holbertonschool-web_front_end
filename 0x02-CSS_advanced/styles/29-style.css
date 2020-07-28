@@ -184,8 +184,8 @@ a:active {
 }
 .nav .nav-link::before {
     content: "";
-    /* position: absolute; */
-    top: 0;
+    position: absolute;
+    /* top: 0; */
     left: 0;
     background-color: var(--color-white);
     width: 0;
