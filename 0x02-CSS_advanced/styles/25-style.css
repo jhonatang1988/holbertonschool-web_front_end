@@ -80,8 +80,8 @@ a:active {
     background-color: var(--color-light-grey);
 }
 .button {
-    display: var(--button-display);
-    padding: var(--button-padding);
+    /* display: var(--button-display);
+    padding: var(--button-padding); */
     border-style: var(--button-border);
     /* font-size: var(--button-font-size);
     color: var(--button-color);
