@@ -183,8 +183,8 @@ a:active {
     padding: 0.5rem 1rem;
 }
 .nav .nav-link::before {
-    /* content: ""; */
-    position: absolute;
+    content: "";
+    /* position: absolute; */
     top: 0;
     left: 0;
     background-color: var(--color-white);
