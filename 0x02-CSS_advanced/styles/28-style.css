@@ -64,9 +64,9 @@ html {
 header {
     padding: var(--header-padding);
 }
-.header-logo {
+/* .header-logo {
     position: var(--header-logo-position);
-}
+} */
 body {
     color: var(--text-color);
     font-family: var(--font-family-base);
