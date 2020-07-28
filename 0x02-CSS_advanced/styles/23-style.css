@@ -118,6 +118,9 @@ a:active {
 .social-link {
     display: block;
 }
+.social-link > svg {
+    color: var(--text-color);
+}
 .navbar-menu {
     float: right;
 }
