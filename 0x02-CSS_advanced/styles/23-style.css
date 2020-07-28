@@ -115,8 +115,8 @@ a:active {
 .footer-address {
     color: var(--text-color);
 }
-.social-link svg {
-    color: var(--text-color);
+.social-link {
+    display: block;
 }
 .navbar-menu {
     float: right;
