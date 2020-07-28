@@ -46,11 +46,6 @@ html {
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
-section[data-section-theme='dark'] {
-    --text-color: var(--color-white);
-    --section-title-color: var(--color-white);
-    background-color: var(--color-black);
-}
 body {
     color: var(--text-color);
     font-family: var(--font-family-base);
@@ -168,4 +163,9 @@ ul.row {
 [class^='col-'] {
     float: left;
     padding: 0.5rem;
+}
+[data-section-theme='dark'] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background-color: var(--color-black);
 }
