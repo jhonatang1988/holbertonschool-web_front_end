@@ -1,0 +1,18 @@
+/* margin left and right to body tag
+margin left and right to div tags
+using mixins */
+$margin-body: 10px;
+$margin-div: 15px;
+
+@mixin margin($margin) {
+    margin-left: $margin;
+    margin-right: $margin;
+}
+
+body {
+    @include margin($margin-body);
+}
+
+div {
+    @include margin($margin-div);
+}
