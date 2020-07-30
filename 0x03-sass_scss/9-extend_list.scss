@@ -9,14 +9,14 @@ $text-color-warning-class: #FF0000;
     font-size: $font-size-info;
 }
 
-.warning {
-    @extend %info;
-    color: $text-color-warning-class;
-}
-
 .success {
     @extend %info;
     color: $text-color-success-class;
+}
+
+.warning {
+    @extend %info;
+    color: $text-color-warning-class;
 }
 
 .info {
