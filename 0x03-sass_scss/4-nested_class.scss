@@ -1,0 +1,13 @@
+/* set text color to body tags elements
+text color to class red inside body tags
+using nested declarations */
+$text-color-body: #3D3D3D;
+$text-color-red-class: #FF0000;
+
+body {
+    color: $text-color-body;
+    
+    .red {
+        color: $text-color-red-class;
+    }
+}
