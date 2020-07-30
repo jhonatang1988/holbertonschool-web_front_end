@@ -1,0 +1,18 @@
+/* font size to body tag
+font size to h1 inside body tag
+font size to h1 inside body tag and with smaller class */
+$font-size-body: 14px;
+$font-size-h1: 16px;
+$font-size-smaller-class: 12px;
+
+body {
+    font-size: $font-size-body;
+
+    h1 {
+        font-size: $font-size-h1;
+
+        &.smaller {
+            font-size: $font-size-smaller-class;
+        }
+    }
+}
