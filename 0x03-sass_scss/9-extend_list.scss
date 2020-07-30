@@ -1,12 +1,17 @@
 /* font size to class info
 text color to class success and extends info
 texto color to class warning and extends info */
+
 $font-size-info: 12px;
 $text-color-success-class: #00FF00;
 $text-color-warning-class: #FF0000;
 
 %info {
     font-size: $font-size-info;
+}
+
+.info {
+    @extend %info;
 }
 
 .success {
@@ -17,8 +22,4 @@ $text-color-warning-class: #FF0000;
 .warning {
     @extend %info;
     color: $text-color-warning-class;
-}
-
-.info {
-    @extend %info;
 }
