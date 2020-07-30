@@ -1,0 +1,27 @@
+/* font sizes and text color dinamically
+set depending on screen width */
+$font-20: 20px;
+$font-18: 18px;
+$font-16: 16px;
+$font-14: 14px;
+$large-width: 960;
+$medium-width: 640px;
+$small-width: 320px;
+$text-color-small-class: #1D1D1D;
+
+
+h1 {
+    font-size: $font-20;
+    @media screen and (max-width: $large-width) {
+        font-size: $font-18;
+    }
+    @media screen and (max-width: $medium-width) {
+        font-size: $font-16;
+    }
+    @media screen and (max-width: $small-width) {
+        font-size: $font-14;
+        &.small {
+            color: $text-color-small-class;
+        }
+    }
+}
