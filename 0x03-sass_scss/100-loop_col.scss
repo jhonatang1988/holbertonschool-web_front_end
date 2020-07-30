@@ -1,0 +1,12 @@
+/* creates classes with different width
+using mixin */
+
+@mixin setwidth($col_number) {
+    width: percentage(1 / $col_number);
+}
+
+@for $i from 1 through 4 {
+    .col-#{$i} {
+        @include setwidth($i);
+    }
+}
