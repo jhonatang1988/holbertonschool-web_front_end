@@ -1,0 +1,11 @@
+/* text color to body tag elements
+text color to elements of red class and first children of body */
+$text-color-body: #3D3D3D;
+$text-color-red-class: #FF0000;
+body {
+    color: $text-color-body;
+
+    & > .red {
+        color: $text-color-red-class;
+    }
+}
