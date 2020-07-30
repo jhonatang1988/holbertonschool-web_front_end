@@ -6,20 +6,24 @@ $font-size-info: 12px;
 $text-color-success-class: #00FF00;
 $text-color-warning-class: #FF0000;
 
-%info {
+%info-shared {
     font-size: $font-size-info;
 }
 
+@mixin text-color($text-color) {
+    color: $text-color;
+}
+
 .info {
-    @extend %info;
+    @extend %info-shared;
 }
 
 .success {
-    @extend %info;
-    color: $text-color-success-class;
+    @extend %info-shared;
+    @include text-color($text-color-success-class);
 }
 
 .warning {
-    @extend %info;
-    color: $text-color-warning-class;
+    @extend %info-shared;
+    @include text-color($text-color-warning-class);
 }
