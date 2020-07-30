@@ -1,0 +1,12 @@
+/* creates a class from a list of suffixes
+and assigns background image
+using @import and @each */
+
+@import '11-photos';
+
+
+@each $name in $list-names {
+    .photo-#{$name} {
+        background: image-url("photos/#{$name}.jpg") no-repeat;
+    }
+}
