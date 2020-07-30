@@ -1,0 +1,15 @@
+/* text color to red class
+text color to green class
+text clor to blue class
+using @import */
+@import '10-colors';
+
+.red {
+    color: $red;
+}
+.green {
+    color: $green;
+}
+.blue {
+    color: $blue;
+}
