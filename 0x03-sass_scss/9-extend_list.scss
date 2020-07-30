@@ -2,20 +2,16 @@
 text color to class success and extends info
 texto color to class warning and extends info */
 
-$font-size-info: 12px;
-$text-color-success-class: #00FF00;
-$text-color-warning-class: #FF0000;
-
 .info {
-    font-size: $font-size-info;
+    font-size: 12px;
 }
 
 .success {
     @extend .info;
-    color: $text-color-success-class;
+    color: #00FF00;
 }
 
 .warning {
     @extend .info;
-    color: $text-color-warning-class;
+    color: #FF0000;
 }
