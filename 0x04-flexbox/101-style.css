@@ -1,0 +1,58 @@
+:root {
+    --font-size-main-box: 4.8rem;
+    --padding-main-box-top-bottom: 1rem;
+    --padding-main-box-right-left: 1rem;
+}
+
+.container {
+    margin-top: 1rem;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 20%;
+    align-items: baseline;
+}
+
+.box3 {
+    font-size: var(--font-size-main-box);
+    background-color: blue;
+    padding-top: var(--padding-main-box-top-bottom);
+    padding-right: var(--padding-main-box-right-left);
+    padding-bottom: var(--padding-main-box-top-bottom);
+    padding-left: var(--padding-main-box-right-left);
+}
+
+.box2, .box4 {
+    font-size: calc(var(--font-size-main-box) * 0.35);
+    padding-top: calc(var(--padding-main-box-top-bottom) * 1.1);
+    padding-right: var(--padding-main-box-right-left);
+    padding-bottom: var(--padding-main-box-top-bottom);
+    padding-left: var(--padding-main-box-right-left);
+}
+
+.box1, .box5 {
+    font-size: calc(var(--font-size-main-box) * 0.2);
+    padding-top: var(--padding-main-box-top-bottom);
+    padding-right: var(--padding-main-box-right-left);
+    padding-bottom: var(--padding-main-box-top-bottom);
+    padding-left: var(--padding-main-box-right-left);
+}
+
+.box1 {
+    background-color: chocolate;
+}
+
+.box2 {
+    background-color: crimson;
+}
+
+.box4 {
+    background-color: yellowgreen;
+}
+
+.box5 {
+    background-color: green;
+}
