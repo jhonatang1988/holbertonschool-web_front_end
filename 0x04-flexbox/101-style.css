@@ -16,6 +16,10 @@
     align-items: baseline;
 }
 
+.box {
+    color: white;
+}
+
 .box3 {
     font-size: var(--font-size-main-box);
     background-color: blue;
