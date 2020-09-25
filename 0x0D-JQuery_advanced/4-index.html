@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 2</title>
+        <script type="application/javascript" src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <script>
+            function createTextElement () {
+                $('body').append(
+                    $('<table>').append(
+                        $('<thead>').append(
+                            $('<tr>').append(
+                                $('<th>').text('Firstname'),
+                                $('<th>').text('Lastname')
+                            )
+                        ),
+                        $('<tbody>').append(
+                            $('<tr>').append(
+                                $('<td>').text('Guillaume'),
+                                $('<td>').text('Putito')
+                            ),
+                            $('<tr>').append(
+                                $('<td>').text('Paulette'),
+                                $('<td>').text('Putita')
+                            ),
+                            $('<tr>').append(
+                                $('<td>').text('Antoine'),
+                                $('<td>').text('Putito')
+                            )
+                        )
+                    )
+                )
+            }
+            createTextElement()
+            function replaceFamilyTree () {
+                $('tbody').html('<tr><td>Gerard</td><td>Putito</td></tr>')
+                // $('tbody').replaceWith($('<tr>').append(
+                //                 $('<td>').text('Gerard'),
+                //                 $('<td>').text('Putito')
+                //             ))
+            }
+            replaceFamilyTree()
+        </script>
+    </body>
+
+</html>
+
