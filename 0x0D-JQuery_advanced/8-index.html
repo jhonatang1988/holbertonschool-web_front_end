@@ -1,4 +1,4 @@
-8<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" dir="ltr">
 
@@ -70,10 +70,9 @@
 
             function buildPagination (numberOfItems, itemsPerPage, currentOffset) {
                 paginationList = $('ul').last()
-                console.log(paginationList)
                 paginationList.empty()
                 const numberOfPages = Math.floor(numberOfItems / itemsPerPage) + 1
-                for (let i = 1; i < numberOfPages; i++) {
+                for (let i = 0; i < numberOfPages + 1; i++) {
                     paginationList.append(
                         $('<li>', {
                             style: 'cursor: pointer; margin-left: 10px; display: inline-block;'
@@ -82,6 +81,7 @@
                         })
                     )
                 }
+                paginationList.children('li').eq(currentOffset).css("font-weight", "bold")
             }
             $(
                 createSearchForm()
