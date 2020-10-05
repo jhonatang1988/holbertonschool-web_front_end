@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</head>
+<body>
+    <div id="loggedOut">
+        <h1>Login to the website</h1>
+        <input type="text" name="" id="firstname" placeholder="firstname">
+        <input type="text" name="" id="email" placeholder="email">
+        <button onclick="login()">Log me in</button>
+    </div>
+    <div id="loggedIn">
+        <h1 id="welcomeText"></h1>
+    </div>
+    
+    <script>
+        if ($()) {
+            function showForm () {
+                $('div#loggedOut').css('display', 'block')
+                $('div#loggedIn').css('display', 'none')
+            }
+            function hideForm () {
+                console.log(Cookies.get('email'))
+                $('div#loggedOut').css('display', 'none')
+                $('div#loggedIn').css('display', 'block')
+            }
+            function deleteCookiesAndShowForm () {
+                Cookies.remove('email');
+                Cookies.remove('firstname');
+                showForm ()
+            }
+            function showWelcomeMessageOrForm () {
+                if (Cookies.get('email') != undefined || Cookies.get('firstname') != undefined) {
+                    $('h1#welcomeText').html(
+                        `Welcome ${Cookies.get('firstname')} (<a href="#" onclick="logout()">logout</a>)`
+                    )
+                    hideForm()
+                } else {
+                    showForm()
+                }
+            }
+            function login() {
+                Cookies.set('email', $('input#email').val()),
+                Cookies.set('firstname', $('input#firstname').val()),
+                showWelcomeMessageOrForm()
+            }
+            function logout () {
+                deleteCookiesAndShowForm()
+                showWelcomeMessageOrForm()
+            }
+            showWelcomeMessageOrForm ()
+        }
+    </script>
+</body>
+</html>
